@@ -1,5 +1,5 @@
 module Validator
-  class SetupGenerator < ::Rails::Generators::Base
+  class InstallGenerator < ::Rails::Generators::Base
     COMMENTED_AUTOLOAD_PATH_REGEXP = /\n *#+ *config\.autoload_paths.*/
     UNCOMMENTED_AUTOLOAD_PATH_REGEXP = /\n *[^#]*config\.autoload_paths \+= %W\([^)]*/
 
