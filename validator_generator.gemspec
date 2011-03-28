@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Kosuke Matsuda"]
   s.email       = ["hi@matsuda.me"]
   s.homepage    = "https://github.com/matsuda/validator_generator"
-  s.summary     = %q{generate validator's skeleton for rails 3}
-  s.description = %q{generate validator's skeleton for rails 3}
+  s.summary     = %q{Rails 3 generator plugin that generates validator's skeleton files.}
+  s.description = %q{Rails 3 generator plugin that generates validator's skeleton files.}
 
   s.rubyforge_project = "validator_generator"
   s.required_rubygems_version = ">= 1.3.6"
