@@ -18,27 +18,6 @@ Then run bundle
 
 ## Features
 
-* setup
-
-autoload_pathsにvalidatorを配置するパスを設定、もしくは追加する
-
-    $ rails g validator:setup
-
-autoload_pathsにまだ何も設定されていない場合
-
-    module MyApp
-      class Application < Rails::Application
-    
-      # config.autoload_paths += %W(#{config.root}/extras)
-      config.autoload_paths += %W(#{config.root}/app/validators)
-    
-autoload_pathsに設定されている場合は、最後に追加する
-
-    module MyApp
-      class Application < Rails::Application
-    
-      config.autoload_paths += %W(#{config.root}/extras #{config.root}/app/validators)
-    
 * generates validator 
 
 カスタムvalidatorクラスのスケルトンファイルを作成する
