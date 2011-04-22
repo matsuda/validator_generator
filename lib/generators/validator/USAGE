@@ -1,8 +1,10 @@
 Description:
-    Explain the generator
+    This generator generate a skeleton file for custom to app/validators directory.
 
 Example:
     rails generate validator Thing
 
     This will create:
-        what/will/it/create
+        app/validators/thing_validator.rb
+    This also create test file:
+        test/unit/thing_test.rb
