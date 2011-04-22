@@ -10,6 +10,6 @@ class ValidatorGenerator < Rails::Generators::NamedBase
   end
 
   hook_for :test_framework, :as => :model do |instance, test_framework|
-    instance.invoke test_framework, [instance.name], :fixture => false
+    instance.invoke test_framework, ["#{instance.name}Validator"], :fixture => false
   end
 end
