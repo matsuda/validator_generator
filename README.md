@@ -25,7 +25,7 @@ Then run bundle
     $ rails g validator Email
           create  app/validators/email_validator.rb
           invoke  test_unit
-          create    test/unit/thing_validator_test.rb
+          create    test/unit/email_validator_test.rb
     
     $ cat app/validators/email_validator.rb 
     class EmailValidator < ActiveModel::EachValidator
