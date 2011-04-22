@@ -8,4 +8,8 @@ class ValidatorGenerator < Rails::Generators::NamedBase
   def create_validator_files
     template 'validator.rb', File.join('app/validators', class_path, "#{file_name}_validator.rb")
   end
+
+  hook_for :test_framework, :as => :model do |instance, test_framework|
+    instance.invoke test_framework, [instance.name], :fixture => false
+  end
 end
